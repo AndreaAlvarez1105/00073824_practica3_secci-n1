@@ -1,31 +1,44 @@
 :root {
     --blue: #1e90ff;
     --white: #ffffff;
-
+    --pink: #E12AFB;
+    --green: #00ff00;
 }
 
-.item-a {
-    grid-area: header;
-    background-color: var(--blue);
+.box {
+    display: flex;
+    background-color: var(--pink);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.box div {
+    margin: 10px 5px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: var(--blue);
+    width: 33%;
+}
+
+
+.item-a {
+    background-color: var(--blue);
+    grid-area: header;
 }
 
 .item-b {
-    grid-area: main;
     background-color: var(--pink);
-
+    grid-area: main;
 }
 
 .item-c {
-    grid-area: sidebar;
     background-color: var(--blue);
-
+    grid-area: sidebar;
 }
 
 .item-d {
-    grid-area: footer;
     background-color: var(--green);
-
+    grid-area: footer;
 }
 
 .container {
